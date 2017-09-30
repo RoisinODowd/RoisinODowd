@@ -2019,14 +2019,14 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff
+    background-color: #82b74b;
+    border-color: #3e4444
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc
+    background-color: #c1946a;
+    border-color: #3e4444
 }
 
 .btn-primary.focus, .btn-primary:focus {
@@ -5207,7 +5207,7 @@ button.close {
 }
 
 .bg-primary {
-    background-color: #007bff !important
+    background-color: #405d27 !important
 }
 
 a.bg-primary:focus, a.bg-primary:hover {
@@ -5263,7 +5263,7 @@ a.bg-light:focus, a.bg-light:hover {
 }
 
 .bg-dark {
-    background-color: #343a40 !important
+    background-color: #3e4444 !important
 }
 
 a.bg-dark:focus, a.bg-dark:hover {
