@@ -17,6 +17,10 @@
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
+    <!-- Mapbox API css and js -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+
   </head>
 
   <body id="page-top">
@@ -29,26 +33,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <!--
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Projects</a>
-            </li>
-          -->
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li> -->
-          </ul>
+          <ul class="navbar-nav ml-auto"> </ul>
         </div>
       </div>
     </nav>
 
     <header class="bg-primary text-white">
       <div class="container text-center">
-        <h1>Coming soon!</h1>
+        <h1>Cooking the World</h1>
         <!--p class="lead">Developer and Biologist</p>
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=0BzOm66211HkOMjE3dHVya1NfMTQ" role="button">Resume</a>
@@ -62,51 +54,33 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>What, Where, Why</h2>
-            <p class="lead">I've always loved to cook. I made some unusual dishes as a kid (onion and flour fry, sugar mixed with corn flakes) </p>
-            <p class="lead">As a college student, I started to improve my cooking skills while simultaneously becoming more curious about the world.
-              Inspired by the author Sasha Martin, I started on a mission to cook food from every country.</p>
-            <p class="lead">Now I'm 13 countries in and counting. Follow along as my tastebuds travel the globe!</p>
-          </div>
-        </div>
-      </div>
-    </section>
-<!--
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Experience</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Projects</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <h2>One dish from each country</h2>
+            <p class="lead">I've always loved to cook. As a college student, I decided to challenge myself and experience more
+              cuisines by making food from every country in the world. I aim to learn a little about each country as
+              I plan and prepare each meal - listening to some popular music, learning a few words in the country's language,
+              and researching the history and culture of the country.</p>
+            <p class="lead">I choose countries based on seasonal produce and what I'm in the mood to eat.
+              Now I'm 13 countries in and counting. Follow along as my tastebuds travel the globe!</p>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact me</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-  -->
+
+    <!-- Embedded map -->
+    <div id='map' style='width: 800px; height: 600px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zeWRvd2QiLCJhIjoiY2pqbm12cDFxMm1hazNwcm03OGlpYnY5OSJ9.fM819Z3Qpy7UoxHcuJnknw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10'
+      });
+    </script>
+
+
+
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
