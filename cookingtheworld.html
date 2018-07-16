@@ -18,8 +18,15 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Mapbox API css and js -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <!--script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' /-->
+
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        #map { width:80%; }
+    </style>
 
   </head>
 
@@ -60,7 +67,27 @@
               I plan and prepare each meal - listening to some popular music, learning a few words in the country's language,
               and researching the history and culture of the country.</p>
             <p class="lead">I choose countries based on seasonal produce and what I'm in the mood to eat.
-              Now I'm 13 countries in and counting. Follow along as my tastebuds travel the globe!</p>
+              Now I'm 15 countries in and counting. Follow along as my tastebuds travel the globe!</p>
+            </br>
+            </br>
+            <h3>Countries cooked:</h3>
+            <ul>
+              <li>Ireland: leek and potato soup, brown bread, coddle, scones</li>
+              <li>France: radish sandwiches, quiche</li>
+              <li>Spain: espinadas con garbonzos</li>
+              <li>Germany: brezeln, spaetzle</li>
+              <li>Israel: falafel, Israeli salad</li>
+              <li>Thailand: green curry</li>
+              <li>Tajikistan: osh, Tajik salad</li>
+              <li>United States: apple pie, chili, blueberry pancakes, and more!</li>
+              <li>Italy: pasta e cece</li>
+              <li>Russia: Russian tea with jam</li>
+              <li>Lebanon: mujadara</li>
+              <li>Ethiopia: misr wot</li>
+              <li>China: hot and sour soup, egg drop soup</li>
+              <li>Greece: greek chicken, tzatziki, Greek salad, pita</li>
+              <li>Turkey: Turkish red lentil soup</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -68,14 +95,22 @@
 
 
 
-
     <!-- Embedded map -->
-    <div id='map' style='width: 800px; height: 600px;'></div>
+    <!--div id='map' style='width: 800px; height: 600px; margin-left: auto; margin-right: auto;'></div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zeWRvd2QiLCJhIjoiY2pqbm12cDFxMm1hazNwcm03OGlpYnY5OSJ9.fM819Z3Qpy7UoxHcuJnknw';
       var map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v10'
+      });
+    </script-->
+
+    <div id='map' style='width: 600px; height: 400px; margin-left: auto; margin-right: auto; zoom: 2;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zeWRvd2QiLCJhIjoiY2pqbm12cDFxMm1hazNwcm03OGlpYnY5OSJ9.fM819Z3Qpy7UoxHcuJnknw';
+      var map = new mapboxgl.Map({
+          container: 'map', // container id
+          style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
       });
     </script>
 
