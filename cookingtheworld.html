@@ -18,15 +18,20 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
 
     <!-- Mapbox API css and js -->
-    <!--script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' /-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
 
 
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.46.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        #map { width:80%; }
-    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122659987-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-122659987-1');
+    </script>
+
 
   </head>
 
@@ -105,12 +110,12 @@
       });
     </script-->
 
-    <div id='map' style='width: 600px; height: 400px; margin-left: auto; margin-right: auto; zoom: 2;'></div>
+    <div id='map' style='width: 600px; height: 300px; margin-left: auto; margin-right: auto; zoom: 2;'></div>
     <script>
       mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zeWRvd2QiLCJhIjoiY2pqbm12cDFxMm1hazNwcm03OGlpYnY5OSJ9.fM819Z3Qpy7UoxHcuJnknw';
       var map = new mapboxgl.Map({
           container: 'map', // container id
-          style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
+          style: 'mapbox://styles/rosydowd/cjjnq6kfx023e2sp57uruegxp'
       });
     </script>
 
