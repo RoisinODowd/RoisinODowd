@@ -1,151 +1,348 @@
+<!---------------------------------
+Roisin O'Dowd
+Personal website
+
+Created using Bootstrap, HTML, and CSS
+Currently working on custom Javascript
+---------------------------------->
+
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Roisin O'Dowd - Resume</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-  <head>
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="google-site-verification" content="3o89vKC0cR-DhC7T4euFSFagp3thsxsXqxR62HOgyrk" />
-    <meta name="author" content="">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
 
-    <title>Roisin O'Dowd</title>
+  <!-- Bootstrap css -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries CSS Files -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/modal-video/css/modal-video.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/scrolling-nav.css" rel="stylesheet">
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122659987-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+</head>
 
-      gtag('config', 'UA-122659987-1');
-    </script>
+<body>
 
+  <header id="header" class="header header-hide">
+    <div class="container">
 
-  </head>
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto"><span>Roisin</span> O'Dowd</a></h1>
+      </div>
 
-  <body id="page-top">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a target="_blank" href="https://drive.google.com/file/d/1lkFbtzUjdXZOSyyzqpMr-HIB67fGmKYi/view?usp=sharing">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Roisin O'Dowd</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <!--
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Projects</a>
-            </li>
-          -->
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li> -->
-          </ul>
+<!--Jumbotron -->
+  <section id="hero" class="wow fadeIn">
+    <div class="hero-container">
+      <h1>Roisin O'Dowd</h1>
+      <h2>Software Engineer</h2>
+      <img src="img/hero-img.png" alt="Computer">
+      <div class="btns">
+        <a href="#projects"><i class="fa fa-windows fa-3x"></i> Projects</a>
+        <a href="https://drive.google.com/file/d/1lkFbtzUjdXZOSyyzqpMr-HIB67fGmKYi/view?usp=sharing"><i class="fa fa-play fa-3x"></i> Resume</a>
+        <a href="https://github.com/RoisinODowd"><i class="fa fa-apple fa-3x"></i> Github</a>
+      </div>
+    </div>
+  </section>
+
+<!-- About Me -->
+  <section id="about" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>About</h2>
+        <p class="separator"></p>
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="col-lg-10 col-md-6">
+          <div class="row justify-content-center">
+              <p>Hi, I'm Roisin! I'm a student at Pitt studying Computer Science. I am currently looking for a full-time engineering position. My current tech interests include cloud computing and accessible design.
+            </br></br>Outside of technology, I'm double majoring in Microbiology and minoring in Farsi. On the weekends, you'll find me hiking, cooking, and playing saxophone.
+            </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- My Experience -->
+  <section id="experience" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+
+        <h2>Work Experience</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8 col-lg-6">
+          <div class="feature-block">
+
+            <img src="img/Icons/desktop.png" alt="Desktop computer" class="img-fluid">
+            <h3>Software Engineering Intern</h3>
+            <h4>HM Health Solutions, Highmark Health</h4>
+            <p>•	Built processes and web pages that impacted 100% of Highmark Health employees and 100,000+ customers across Highmark insurance groups, North Dakota Blue Cross Blue Shield (BCBS), and Wyoming BCBS
+              </br>•	Wrote sales processes using Java, JavaScript, and SQL alongside other team members for release of new sales platform
+              </br>•	Developed for accessibility initiative, modifying the frontend on all public sites to work with screen reading software
+              </br>•	Raised Apex unit test coverage from 16% to 68% for North Dakota BCBS platform, ensuring product was shipped bug-free
+              </br>•	Interfaced with clients to gather software requirements, proposed and implemented programmatic solutions, and completed maintenance on 6 Highmark and client insurance sales platforms within an Agile framework
+            </p>
+            <a href="#">read more</a>
+
+          </div>
         </div>
-      </div>
-    </nav>
 
-    <header class="bg-primary text-white">
-      <div class="container text-center">
-        <h1>Roisin O'Dowd</h1>
-        <p class="lead">Software Engineer</p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=0BzOm66211HkOMjE3dHVya1NfMTQ" role="button">Resume</a>
-          <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/roisinodowd/" role="button">LinkedIn</a>
-          <a class="btn btn-primary btn-lg" href="https://github.com/RoisinODowd" role="button">GitHub</a>
-          <!--<a class="btn btn-primary btn-lg" href="https://roisinodowd.github.io/projects.html" role="button">Projects</a>-->
-        </p>
-      </div>
-    </header>
+        <div class="col-md-8 col-lg-6">
+          <div class="feature-block">
 
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About</h2>
-            <p class="lead">Hi, I'm Roisin! I'm a senior at the University of Pittsburgh studying Computer Science and Microbiology.</p>
-            <p class="lead">I did biomedical research during my first three years of college before moving into software engineering. I am currently working as a Software Engineering Intern at HM Health Solutions in Pittsburgh. I'm looking for a full-time software engineering position starting after my graduation in April 2019.</p>
-            <p class="lead">Outside of programming, I study Farsi and I'm taking homeland security courses. In my free time you'll find me hiking, trying new recipes, playing saxophone, and attending hackathons.</p>
-            <!--Relevant Coursework:
-            Technical: Systems Software, Computer Organization and Assembly, Cal 1&2, Statistics-->
-            <!-- <ul>
-              <li>Clickable nav links that smooth scroll to page sections</li>
-              <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-              <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-              <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-            </ul> -->
+            <img src="img/Icons/dna.png" alt="DNA" class="img-fluid">
+            <h3>Bioinformatics Intern</h3>
+            <h4>Pitt School of Medicine</h4>
+            <p>•  Independently designed, wrote grants, successfully applied for funding, and led a year-long research project within the lab
+              </br>•  Optimized algorithms that determine the evolution of proteins involved in heart disease, using Python and R
+              </br>•  Quantified computationally discovered interactions using live-cell experiments, tissue culture, and microscopy
+            </p>
+            <a href="#">read more</a>
+
           </div>
         </div>
       </div>
-    </section>
-<!--
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Experience</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+    </div>
+
+  </section>
+
+  <!-- Personal Projects -->
+  <section id="projects" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Personal Projects</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <a target=”_blank” href="https://devpost.com/software/hamilfy">
+            <img src="img/Icons/features.png" alt="Star" class="img-fluid">
+            <h4>Hamilyze</h4></a>
+            <p>- Full stack web app
+            </br>- Creates visualizations from lyrical trends in “Hamilton: An American Musical”
+          </br>- Built with React and SVG.js
+            </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Projects</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/Icons/analytics.png" alt="Graph" class="img-fluid">
+            <h4>Pain Visualizer</h4>
+            <p>- Mobile app
+              </br>- Helps patients quantify, visualize, and track chronic pain
+              </br>- Reached final round of Pain Innovation Challenge
+            </br>- Built with Processing and Java
+          </p>
           </div>
         </div>
-      </div>
-    </section>
 
-
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact me</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <a target=”_blank” href="https://devpost.com/software/popqs">
+            <img src="img/Icons/mobile-chat.png" alt="Mobile chat" class="img-fluid">
+            <h4>Pop Qs</h4></a>
+            <p>- Android app for multi-sensory language learning
+              </br>- Users learn via sounds, interactive graphics, and writing
+              </br>- Won 3rd Place at SteelHacks 2016 and Duolingo’s “Best Educational App” prize
+            </p>
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <a target=”_blank” href="https://devpost.com/software/etch-and-sketch">
+            <img src="img/Icons/interact.png" alt="Finger pushing button" class="img-fluid">
+            <h4>Etch and Sketch</h4></a>
+            <p>- VR drawing experience uses hand gestures to draw on a 3D virtual whiteboard
+            </br>- Won 3rd Place Overall at SteelHacks 2015 and Dell’s Hack of the Week in April 2015
+          </br>- Built with Oculus Rift VR Headset, Thalmic Myo Armbands, and Python
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/Icons/network.png" alt="Group of people" class="img-fluid">
+            <h4>Big Brothers Big Sisters Volunteer Portal</h4>
+            <p>- Entry for Salesforce case contest
+            </br>- Platform tracks volunteers, pairs mentors with mentees, and runs analytics
+          </br>- Built on top of Salesforce with Java, JavaScript, and HTML
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <img src="img/Icons/coding.png" alt="Web page" class="img-fluid">
+            <h4>Resume Site</h4>
+            <p>- Constantly revamping this website
+            </br>- Check back for updates and more information!
+          </br>- Built with HTML and CSS using Bootstrap</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <a target=”_blank” href="https://devpost.com/software/wergu">
+            <img src="img/Icons/double-bubbles.png" alt="Speech bubbles" class="img-fluid">
+            <h4>We Rgu</h4></a>
+            <p>- Web app separates tweets on a given topic by sentiment
+          </br>- Users can chat with people of opposing viewpoints
+        </br>- Built with Python, NLPTK library, and Firebase</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="feature-block">
+            <a target=”_blank” href="https://devpost.com/software/who-s-sick-nlkrj">
+            <img src="img/Icons/index.png" alt="Globe" class="img-fluid">
+            <h4>WHO's Sick</h4></a>
+            <p>- Web app
+            </br>- Uses epidemic and vaccination data from the World Health Organization (WHO) to recommend health precautions travelers should take
+            </br>- Built with HTML, CSS, and Python</p>
+          </div>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </section>
 
-  -->
+  <!-- Screenshots from some projects -->
+  <section id="screenshots" class="padd-section text-center wow fadeInUp">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div><img src="img/PopQs/1.jpg" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/PainViz.png" alt="Screenshot of Pain Visualizer app"></div>
+        <div><img src="img/PopQs/2.jpg" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/using_device.jpg" alt="Screenshot of Pop Qs app">
+        <img src="img/PopQs/oculus_projected.jpg" alt="Screenshot of Pop Qs app">
+        <img src="img/PopQs/presenting.jpg" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/3.jpg" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/4.jpg" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/Hamilyze_5.png" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/right.png" alt="Screenshot of Pop Qs app"></div>
+        <div><img src="img/PopQs/5.jpg" alt="Screenshot of Pop Qs app"></div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
+ <!-- Contact Info -->
+  <section id="contact" class="padd-section wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <h2>Contact</h2>
+        <p class="separator"></p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <div class="col-lg-3 col-md-4">
+
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>Pittsburgh, PA</p>
+            </div>
+
+            <div class="email">
+              <i class="fa fa-envelope"></i>
+              <p>roisinodowd at pitt.edu </p>
+            </div>
+
+            <div class="email">
+              <i class="fa fa-envelope"></i>
+              <p>LinkedIn</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 col-lg-4">
+          <div class="footer-logo">
+
+            <a class="navbar-brand" href="#">Roisin O'Dowd</a>
+          </div>
+        </div>
+
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Roisin O'Dowd 2017</p>
+        <p>&copy; Copyrights eStartup. All rights reserved.</br>Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></p>
       </div>
-      <!-- /.container -->
-    </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  </footer>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/modal-video/js/modal-video.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
-  </body>
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
+</body>
 </html>
